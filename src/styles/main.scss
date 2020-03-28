@@ -1,0 +1,15 @@
+// Bootstrap imports
+@import "./common/bootstrap";
+
+// costum variables
+@import "./common/variables";
+
+// base styles
+@import "./base/base";
+
+// component styles
+@import "./components/footer";
+@import "./components/nav";
+
+// home styles
+@import "./pages/home.scss";

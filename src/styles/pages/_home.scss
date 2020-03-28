@@ -1,0 +1,178 @@
+.hero {
+  padding-bottom: 190px;
+
+  .hero-gif {
+    display: none;
+  }
+
+  h1 {
+    font-size: 38px;
+    font-family: $ff-ss;
+    letter-spacing: 0.5px;
+    font-weight: $medium;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-family: $ff-ss;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      width: 250px;
+      padding: 8px 0;
+      margin: 10px 0;
+    }
+
+    .docBtn {
+      border: 0;
+      background-color: $red;
+      color: $white;
+      margin-right: 20px;
+    }
+
+    .wtcBtn {
+      border: 2px solid $red;
+      background-color: $white;
+      color: $red;
+      font-weight: $normal;
+    }
+  }
+}
+
+.pricing {
+  padding-bottom: 190px;
+
+  .plans {
+    padding-bottom: 50px;
+  }
+
+  .card {
+    display: flex;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-family: $ff-ss;
+        letter-spacing: 0.5px;
+        font-weight: $medium;
+        padding-bottom: 10px;
+      }
+
+      p {
+        font-family: $ff-ss;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+        padding-bottom: 10px;
+      }
+
+      a {
+        padding-bottom: 20px;
+        font-weight: $medium;
+      }
+
+      button {
+        width: 130px;
+        padding: 5px 25px;
+      }
+    }
+  }
+}
+
+.howItWorks {
+  margin-bottom: 150px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+
+  img {
+    grid-column: 1 / 3;
+    width: 100%;
+  }
+
+  .hiw-content {
+    grid-column: 1 / 3;
+
+    h2 {
+      font-weight: $medium;
+      font-family: $ff-ss;
+    }
+
+    h5 {
+      font-weight: $medium;
+      font-family: $ff-ss;
+      padding: 20px 0;
+    }
+
+    p {
+      font-family: $ff-ss;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      padding-bottom: 10px;
+    }
+
+    button {
+      padding: 8px 0;
+      margin: 10px 0;
+      width: 200px;
+      border: 0;
+      background-color: $red;
+      color: $white;
+      margin-right: 20px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .hero {
+    .hero-gif {
+      display: block;
+
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .howItWorks {
+    .hiw-content {
+      display: grid;
+      align-content: center;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .howItWorks {
+    img {
+      grid-column: 1;
+    }
+
+    .hiw-content {
+      grid-column: 2;
+    }
+  }
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background: $background;
+
+  img {
+    width: 65px;
+  }
+}

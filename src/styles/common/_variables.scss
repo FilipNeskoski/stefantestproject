@@ -1,0 +1,31 @@
+// Fonts
+$ff-ss: "mr-eaves-mx modern", sans-serif;
+$decorative: "banshee-std, cursive";
+
+$header-font: $decorative;
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+// Colors
+$background: rgb(253, 253, 253);
+$red: #e23400;
+$darkRed: #8f0000;
+$white: #fff;
+$gray: #8f8f8f;
+$black: #1f1f1f;
+
+$brand-primary: $red;
+
+$body-bg: $background;
+$body-color: $black;
+
+// Placeholders %clearfix {
+//   &::after {
+//     content: "";
+//     display: block;
+//     clear: both;
+//   }
+// }
